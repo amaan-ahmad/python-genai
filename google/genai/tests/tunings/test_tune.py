@@ -301,6 +301,11 @@ def test_eval_config_with_metrics(client):
             ),
             genai_types.Metric(name='bleu'),
             genai_types.Metric(name='rouge_1'),
+            genai_types.UnifiedMetric(
+                bleu_spec=genai_types.BleuSpec(
+                    use_effective_order=True
+                )
+            ),
         ],
         output_config=genai_types.OutputConfig(
             gcs_destination=genai_types.GcsDestination(
