@@ -649,8 +649,18 @@ class BaseApiClient:
           else None
       )
 
-      if not self.location and not self.api_key and not self.custom_base_url:
-          self.location = 'global'
+      if (
+          not self.location
+          and not self.api_key
+          and (
+              not self.custom_base_url
+              or (
+                  self.custom_base_url
+                  and self.custom_base_url.endswith('.googleapis.com')
+              )
+          )
+      ):
+        self.location = 'global'
 
       # Skip fetching project from ADC if base url is provided in http options.
       if (
