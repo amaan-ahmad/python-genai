@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.63.0](https://github.com/googleapis/python-genai/compare/v1.62.0...v1.63.0) (2026-02-07)
+
+
+### Features
+
+* Support encryption_spec in tuning job creation configuration for GenAI SDK ([057d6f0](https://github.com/googleapis/python-genai/commit/057d6f077b0a6d13c843fff0479027f5f7369113))
+
+
+### Documentation
+
+* Regenerate docs for 1.62.0 ([455ec26](https://github.com/googleapis/python-genai/commit/455ec260be3deef68d59eda6d7ed2b53505d3a4f))
+
 ## [1.62.0](https://github.com/googleapis/python-genai/compare/v1.61.0...v1.62.0) (2026-02-04)
 
 
